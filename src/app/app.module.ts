@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { BasicComponent } from './basic/basic.component';
 import { AdvancedComponent } from './advanced/advanced.component';
 import { ContainedComponent } from './contained/contained.component';
+import { AnimboxComponent } from './animbox/animbox.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ContainedComponent } from './contained/contained.component';
     HomeComponent,
     BasicComponent,
     AdvancedComponent,
-    ContainedComponent
+    ContainedComponent,
+    AnimboxComponent
   ],
   imports: [
     BrowserModule,

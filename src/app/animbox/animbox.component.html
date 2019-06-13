@@ -1,0 +1,4 @@
+
+<div class="mybox mx-auto" [@changeState]="currentState" (@changeState.start)="animationBegin($event)" (@changeState.done)="animationEnd($event)"></div>
+
+    <div class="msgbox mx-auto">{{msg}}</div>
