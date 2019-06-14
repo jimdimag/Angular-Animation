@@ -9,12 +9,12 @@ import { fadeAnimation } from '../animations';
   styleUrls: [ './fadeblock.component.scss' ],
   animations: [
     trigger('changeState', [
-      transition(':enter', [
+      transition('void => *', [
           useAnimation(fadeAnimation, {
               params: {
-                  delay: '3000ms',
-                  from: 0,
-                  to: 1,
+                  delay: '1000ms',
+                  from: 1,
+                  to: 0,
                   time: '1s'
               }
           })
@@ -23,10 +23,12 @@ import { fadeAnimation } from '../animations';
   ]
 })
 export class FadeblockComponent implements OnInit {
+  currentState;
 
   constructor() { }
 
   ngOnInit() {
+    this.currentState = 'entered';
   }
 
 }

@@ -10,7 +10,7 @@ export const fadeAnimation = animation([
     }),
     animate('{{ time }} {{ delay }} ease-in-out', style({
         opacity: '{{ to }}'
-    }))
+    })),
 ]);
 
 export const slideAnimation = animation([
